@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: "Kyo's Blog - Indie Hacker Adventure",
+  title: "Kyo's Blog - Indie Hacker",
   author: 'Quang Dieu',
   fullName: 'Tran Quang Dieu',
   headerTitle: "Kyo's Blog",
