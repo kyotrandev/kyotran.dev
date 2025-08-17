@@ -8,13 +8,13 @@ const siteMetadata = {
   theme: 'system',
   siteUrl: 'https://kyotran.dev',
   // TODO: Update analytics URL
-  analyticsURL: 'https://analytics.kyotran.dev/share/Z3eSINRnbzydz1gK/karhdo.dev',
+  analyticsURL: 'https://analytics.kyotran.dev/share',
   siteRepo: 'https://github.com/kyotrandev/kyotran.dev',
   siteLogo: '/static/images/avatar.jpg',
   image: '/static/images/avatar.jpg',
   // TODO: Update social banner
   socialBanner: '/static/images/projects/kyotran-blog.png',
-  email: 'dotrongkhanh.dev@gmail.com',
+  email: 'kyotran.dev@gmail.com',
   github: 'https://github.com/kyotrandev',
   facebook: 'https://www.facebook.com/kyotran.dev',
   // TODO: Update linkedin URL
