@@ -37,20 +37,20 @@ const siteMetadata = {
     provider: 'buttondown',
   },
   comments: {
-    provider: 'giscus',
+    provider: 'giscus' as const,
     giscusConfig: {
-      repo: process.env.NEXT_PUBLIC_GISCUS_REPO,
-      repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID,
-      category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY,
-      categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID,
-      mapping: 'title',
-      reactions: '1',
-      metadata: '0',
-      theme: 'light',
-      darkTheme: 'transparent_dark',
+      repo: process.env.NEXT_PUBLIC_GISCUS_REPO || '',
+      repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID || '',
+      category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY || '',
+      categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID || '',
+      mapping: 'title' as const,
+      reactions: '1' as const,
+      metadata: '0' as const,
+      theme: 'light' as const,
+      darkTheme: 'transparent_dark' as const,
       themeURL: '',
-      lang: 'en',
-      inputPosition: 'bottom',
+      lang: 'en' as const,
+      inputPosition: 'bottom' as const,
     },
   },
   search: {
@@ -62,4 +62,4 @@ const siteMetadata = {
   },
 };
 
-module.exports = siteMetadata;
+export default siteMetadata;

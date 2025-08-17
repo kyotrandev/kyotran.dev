@@ -1,14 +1,10 @@
-import { AlgoliaButton } from 'pliny/search/AlgoliaButton'
-import { KBarButton } from 'pliny/search/KBarButton'
-import siteMetadata from '@/data/siteMetadata'
+import { AlgoliaButton } from 'pliny/search/AlgoliaButton';
+import { KBarButton } from 'pliny/search/KBarButton';
+import siteMetadata from '@/data/siteMetadata';
 
 const SearchButton = () => {
-  if (
-    siteMetadata.search &&
-    (siteMetadata.search.provider === 'algolia' || siteMetadata.search.provider === 'kbar')
-  ) {
-    const SearchButtonWrapper =
-      siteMetadata.search.provider === 'algolia' ? AlgoliaButton : KBarButton
+  if (siteMetadata.search && (siteMetadata.search.provider === 'algolia' || siteMetadata.search.provider === 'kbar')) {
+    const SearchButtonWrapper = siteMetadata.search.provider === 'algolia' ? AlgoliaButton : KBarButton;
 
     return (
       <SearchButtonWrapper aria-label="Search">
@@ -18,7 +14,7 @@ const SearchButton = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="hover:text-primary-500 dark:hover:text-primary-400 h-6 w-6 text-gray-900 dark:text-gray-100"
+          className="h-6 w-6 text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
         >
           <path
             strokeLinecap="round"
@@ -27,8 +23,8 @@ const SearchButton = () => {
           />
         </svg>
       </SearchButtonWrapper>
-    )
+    );
   }
-}
+};
 
-export default SearchButton
+export default SearchButton;
