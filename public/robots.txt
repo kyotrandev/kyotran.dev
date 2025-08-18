@@ -1,0 +1,18 @@
+# Robots.txt for kyotran.dev
+# This is a fallback robots.txt file
+# The main robots.txt is generated dynamically from app/robots.ts
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /*.json$
+Disallow: /search.json
+
+# Sitemap
+Sitemap: https://kyotran.dev/sitemap.xml
+
+# Host
+Host: https://kyotran.dev
